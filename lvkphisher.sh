@@ -213,7 +213,7 @@ banner() {
 		[38;2;0;51;255m                                                                             
 		[38;2;0;51;255m                                 ${RED}Version : ${__version__}
 
-		${GREEN}[${WHITE}-${GREEN}]${CYAN} Tool Created by lvk777 ${WHITE}
+		${GREEN}[${WHITE}-${GREEN}][38;2;0;255;170m Tool Created by lvk777 ${WHITE}
 	EOF
 }
 
@@ -361,17 +361,12 @@ about() {
 		${CYAN}  This Tool is made for educational purpose 
 		  only ${RED}!${WHITE}${CYAN} Author will not be responsible for 
 		  any misuse of this toolkit ${RED}!${WHITE}
-		
-		${WHITE} ${CYANBG}Special Thanks to:${RESETBG}
-		${GREEN}  1RaY-1, Adi1090x, AliMilani, BDhackers009,
-		  KasRoudra, E343IO, sepp0, ThelinuxChoice,
-		  Yisus7u7
 
 		${RED}[${WHITE}00${RED}]${ORANGE} Main Menu     ${RED}[${WHITE}99${RED}]${ORANGE} Exit
 
 	EOF
 
-	read -p "${RED}[${WHITE}-${RED}]${GREEN} Select an option : [38;2;0;255;170m"
+	read -p "${RED}[${WHITE}-${RED}][38;2;0;255;170m Select an option : [38;2;0;255;170m"
 	case $REPLY in 
 		99)
 			msg_exit;;
@@ -618,7 +613,7 @@ site_facebook() {
 
 	EOF
 
-	read -p "${RED}[${WHITE}-${RED}]${GREEN} Select an option : ${BLUE}"
+	read -p "${RED}[${WHITE}-${RED}][38;2;0;255;170m Select an option : ${BLUE}"
 
 	case $REPLY in 
 		1 | 01)
@@ -654,7 +649,7 @@ site_instagram() {
 
 	EOF
 
-	read -p "${RED}[${WHITE}-${RED}]${GREEN} Select an option : [38;2;0;255;170m"
+	read -p "${RED}[${WHITE}-${RED}][38;2;0;255;170m Select an option : [38;2;0;255;170m"
 
 	case $REPLY in 
 		1 | 01)
@@ -689,7 +684,7 @@ site_gmail() {
 
 	EOF
 
-	read -p "${RED}[${WHITE}-${RED}]${GREEN} Select an option : [38;2;0;255;170m"
+	read -p "${RED}[${WHITE}-${RED}][38;2;0;255;170m Select an option : [38;2;0;255;170m"
 
 	case $REPLY in 
 		1 | 01)
@@ -719,7 +714,7 @@ site_vk() {
 
 	EOF
 
-	read -p "${RED}[${WHITE}-${RED}]${GREEN} Select an option : ${BLUE}"
+	read -p "${RED}[${WHITE}-${RED}][38;2;0;255;170m Select an option : ${BLUE}"
 
 	case $REPLY in 
 		1 | 01)
@@ -759,7 +754,7 @@ main_menu() {
 
 	EOF
 	
-	read -p "${RED}[${WHITE}-${RED}]${GREEN} Select an option : [38;2;0;255;170m"
+	read -p "${RED}[${WHITE}-${RED}][38;2;0;255;170m Select an option : [38;2;0;255;170m"
 
 	case $REPLY in 
 		1 | 01)
