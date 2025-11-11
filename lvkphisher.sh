@@ -371,7 +371,7 @@ about() {
 
 	EOF
 
-	read -p "${RED}[${WHITE}-${RED}]${GREEN} Select an option : ${BLUE}"
+	read -p "${RED}[${WHITE}-${RED}]${GREEN} Select an option : [38;2;0;255;170m"
 	case $REPLY in 
 		99)
 			msg_exit;;
@@ -654,7 +654,7 @@ site_instagram() {
 
 	EOF
 
-	read -p "${RED}[${WHITE}-${RED}]${GREEN} Select an option : ${BLUE}"
+	read -p "${RED}[${WHITE}-${RED}]${GREEN} Select an option : [38;2;0;255;170m"
 
 	case $REPLY in 
 		1 | 01)
@@ -689,7 +689,7 @@ site_gmail() {
 
 	EOF
 
-	read -p "${RED}[${WHITE}-${RED}]${GREEN} Select an option : ${BLUE}"
+	read -p "${RED}[${WHITE}-${RED}]${GREEN} Select an option : [38;2;0;255;170m"
 
 	case $REPLY in 
 		1 | 01)
@@ -740,26 +740,26 @@ site_vk() {
 main_menu() {
 	{ clear; banner; echo; }
 	cat <<- EOF
-		${RED}[${WHITE}::${RED}]${ORANGE} Select An Attack For Your Victim ${RED}[${WHITE}::${RED}]${ORANGE}
+		[38;2;0;51;255m[::][0m Select An Attack For Your Victim [38;2;0;51;255m[::][0m
 
-		${RED}[${WHITE}01${RED}]${ORANGE} Facebook      ${RED}[${WHITE}11${RED}]${ORANGE} Twitch       ${RED}[${WHITE}21${RED}]${ORANGE} DeviantArt
-		${RED}[${WHITE}02${RED}]${ORANGE} Instagram     ${RED}[${WHITE}12${RED}]${ORANGE} Pinterest    ${RED}[${WHITE}22${RED}]${ORANGE} Badoo
-		${RED}[${WHITE}03${RED}]${ORANGE} Google        ${RED}[${WHITE}13${RED}]${ORANGE} Snapchat     ${RED}[${WHITE}23${RED}]${ORANGE} Origin
-		${RED}[${WHITE}04${RED}]${ORANGE} Microsoft     ${RED}[${WHITE}14${RED}]${ORANGE} Linkedin     ${RED}[${WHITE}24${RED}]${ORANGE} DropBox	
-		${RED}[${WHITE}05${RED}]${ORANGE} Netflix       ${RED}[${WHITE}15${RED}]${ORANGE} Ebay         ${RED}[${WHITE}25${RED}]${ORANGE} Yahoo		
-		${RED}[${WHITE}06${RED}]${ORANGE} Paypal        ${RED}[${WHITE}16${RED}]${ORANGE} Quora        ${RED}[${WHITE}26${RED}]${ORANGE} Wordpress
-		${RED}[${WHITE}07${RED}]${ORANGE} Steam         ${RED}[${WHITE}17${RED}]${ORANGE} Protonmail   ${RED}[${WHITE}27${RED}]${ORANGE} Yandex			
-		${RED}[${WHITE}08${RED}]${ORANGE} Twitter       ${RED}[${WHITE}18${RED}]${ORANGE} Spotify      ${RED}[${WHITE}28${RED}]${ORANGE} StackoverFlow
-		${RED}[${WHITE}09${RED}]${ORANGE} Playstation   ${RED}[${WHITE}19${RED}]${ORANGE} Reddit       ${RED}[${WHITE}29${RED}]${ORANGE} Vk
-		${RED}[${WHITE}10${RED}]${ORANGE} Tiktok        ${RED}[${WHITE}20${RED}]${ORANGE} Adobe        ${RED}[${WHITE}30${RED}]${ORANGE} XBOX
-		${RED}[${WHITE}31${RED}]${ORANGE} Mediafire     ${RED}[${WHITE}32${RED}]${ORANGE} Gitlab       ${RED}[${WHITE}33${RED}]${ORANGE} Github
-		${RED}[${WHITE}34${RED}]${ORANGE} Discord       ${RED}[${WHITE}35${RED}]${ORANGE} Roblox 
+		[38;2;0;51;255m[01][0m Facebook      [38;2;0;51;255m[11][0m Twitch       [38;2;0;51;255m[21][0m DeviantArt
+		[38;2;0;51;255m[02][0m Instagram     [38;2;0;51;255m[12][0m Pinterest    [38;2;0;51;255m[22][0m Badoo
+		[38;2;0;51;255m[03][0m Google        [38;2;0;51;255m[13][0m Snapchat     [38;2;0;51;255m[23][0m Origin
+		[38;2;0;51;255m[04][0m Microsoft     [38;2;0;51;255m[14][0m Linkedin     [38;2;0;51;255m[24][0m DropBox	
+		[38;2;0;51;255m[05][0m Netflix       [38;2;0;51;255m[15][0m Ebay         [38;2;0;51;255m[25][0m Yahoo		
+		[38;2;0;51;255m[06][0m Paypal        [38;2;0;51;255m[16][0m Quora        [38;2;0;51;255m[26][0m Wordpress
+		[38;2;0;51;255m[07][0m Steam         [38;2;0;51;255m[17][0m Protonmail   [38;2;0;51;255m[27][0m Yandex			
+		[38;2;0;51;255m[08][0m Twitter       [38;2;0;51;255m[18][0m Spotify      [38;2;0;51;255m[28][0m StackoverFlow
+		[38;2;0;51;255m[09][0m Playstation   [38;2;0;51;255m[19][0m Reddit       [38;2;0;51;255m[29][0m Vk
+		[38;2;0;51;255m[10][0m Tiktok        [38;2;0;51;255m[20][0m Adobe        [38;2;0;51;255m[30][0m XBOX
+		[38;2;0;51;255m[31][0m Mediafire     [38;2;0;51;255m[32][0m Gitlab       [38;2;0;51;255m[33][0m Github
+		[38;2;0;51;255m[34][0m Discord       [38;2;0;51;255m[35][0m Roblox 
 
-		${RED}[${WHITE}99${RED}]${ORANGE} About         ${RED}[${WHITE}00${RED}]${ORANGE} Exit
+		[38;2;0;51;255m[99][0m About         [38;2;0;51;255m[00][0m Exit
 
 	EOF
 	
-	read -p "${RED}[${WHITE}-${RED}]${GREEN} Select an option : ${BLUE}"
+	read -p "${RED}[${WHITE}-${RED}]${GREEN} Select an option : [38;2;0;255;170m"
 
 	case $REPLY in 
 		1 | 01)
