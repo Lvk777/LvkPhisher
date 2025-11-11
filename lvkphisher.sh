@@ -197,7 +197,7 @@ check_update(){
 check_status() {
 	echo -ne "\n${GREEN}[${WHITE}+${GREEN}]${CYAN} Internet Status : "
 	timeout 3s curl -fIs "https://api.github.com" > /dev/null
-	[ $? -eq 0 ] && echo -e "${GREEN}Online${WHITE}" && echo "Online" || echo -e "${RED}Offline${WHITE}"
+	[ $? -eq 0 ] && echo -e "${GREEN}Online${WHITE}" || echo -e "${RED}Offline${WHITE}"
 }
 
 ## Banner
@@ -363,7 +363,7 @@ about() {
 		  only ${RED}!${WHITE}${CYAN} Author will not be responsible for 
 		  any misuse of this toolkit ${RED}!${WHITE}
 
-${WHITE}[[38;2;0;51;255m01${WHITE}] Localhost
+[38;2;0;51;255m[${WHITE}01[38;2;0;51;255m][38;2;0;51;255m Localhost
 
 		${WHITE}[[38;2;0;51;255m00${WHITE}]${WHITE} Main Menu     ${WHITE}[${[38;2;0;51;255m}99${WHITE}]${WHITE} Exit
 
@@ -374,7 +374,7 @@ ${WHITE}[[38;2;0;51;255m01${WHITE}] Localhost
 		99)
 			msg_exit;;
 		0 | 00)
-			echo -ne "\n${GREEN}[${WHITE}+${GREEN}]${CYAN} Returning to main menu..."
+			echo -ne "\n${RED}[${WHITE}+${RED}][38;2;0;255;170m Returning to main menu..."
 			{ sleep 1; main_menu; };;
 		*)
 			echo -ne "\n${RED}[${WHITE}!${RED}]${RED} Invalid Option, Try Again..."
@@ -515,10 +515,10 @@ start_loclx() {
 ## Start localhost
 start_localhost() {
 	cusport
-	echo -e "\n${RED}[${WHITE}-${RED}]${GREEN} Initializing... ${GREEN}( ${CYAN}http://$HOST:$PORT ${GREEN})"
+	echo -e "\n${RED}[${WHITE}-${RED}]${GREEN} Initializing... ${WHITE}( [38;2;0;255;170mhttp://$HOST:$PORT ${WHITE})"
 	setup_site
 	{ sleep 1; clear; banner_small; }
-	echo -e "\n${RED}[${WHITE}-${RED}]${GREEN} Successfully Hosted at : ${GREEN}${CYAN}http://$HOST:$PORT ${GREEN}"
+	echo -e "\n${RED}[${WHITE}-${RED}][38;2;0;255;170m Successfully Hosted at : ${WHITE}[38;2;0;255;170mhttp://$HOST:$PORT ${WHITE}"
 	capture_data
 }
 
@@ -527,9 +527,9 @@ tunnel_menu() {
 	{ clear; banner_small; }
 	cat <<- EOF
 
-		${WHITE}[[38;2;0;51;255m01${WHITE}] Localhost
-		${WHITE}[[38;2;0;51;255m02${WHITE}] Cloudflared  ${RED}[[38;2;0;255;170mAuto Detects${RED}]
-		${WHITE}[[38;2;0;51;255m03${WHITE}] LocalXpose   ${RED}[[38;2;0;255;170mNEW! Max 15Min${RED}]
+		[38;2;0;51;255m[${WHITE}01[38;2;0;51;255m][38;2;0;51;255m Localhost
+		[38;2;0;51;255m[${WHITE}02[38;2;0;51;255m][38;2;0;51;255m Cloudflared  ${RED}[[38;2;0;255;170mAuto Detects${RED}]
+		[38;2;0;51;255m[${WHITE}03[38;2;0;51;255m][38;2;0;51;255m LocalXpose   ${RED}[[38;2;0;255;170mNEW! Max 15Min${RED}]
 
 	EOF
 
@@ -612,10 +612,10 @@ custom_url() {
 site_facebook() {
 	cat <<- EOF
 
-		${WHITE}[[38;2;0;51;255m01${WHITE}]${WHITE} Traditional Login Page
-		${WHITE}[[38;2;0;51;255m02${WHITE}]${WHITE} Advanced Voting Poll Login Page
-		${WHITE}[[38;2;0;51;255m03${WHITE}]${WHITE} Fake Security Login Page
-		${WHITE}[[38;2;0;51;255m04${WHITE}]${WHITE} Facebook Messenger Login Page
+		[38;2;0;51;255m[${WHITE}01[38;2;0;51;255m][38;2;0;51;255m Traditional Login Page
+		[38;2;0;51;255m[${WHITE}02[38;2;0;51;255m][38;2;0;51;255m Advanced Voting Poll Login Page
+		[38;2;0;51;255m[${WHITE}03[38;2;0;51;255m][38;2;0;51;255m Fake Security Login Page
+		[38;2;0;51;255m[${WHITE}04[38;2;0;51;255m][38;2;0;51;255m Facebook Messenger Login Page
 
 	EOF
 
@@ -648,10 +648,10 @@ site_facebook() {
 site_instagram() {
 	cat <<- EOF
 
-		${WHITE}[[38;2;0;51;255m01${WHITE}]${WHITE} Traditional Login Page
-		${WHITE}[[38;2;0;51;255m02${WHITE}]${WHITE} Auto Followers Login Page
-		${WHITE}[[38;2;0;51;255m03${WHITE}]${WHITE} 1000 Followers Login Page
-		${WHITE}[[38;2;0;51;255m04${WHITE}]${WHITE} Blue Badge Verify Login Page
+		[38;2;0;51;255m[${WHITE}01[38;2;0;51;255m][38;2;0;51;255m Traditional Login Page
+		[38;2;0;51;255m[${WHITE}02[38;2;0;51;255m][38;2;0;51;255m Auto Followers Login Page
+		[38;2;0;51;255m[${WHITE}03[38;2;0;51;255m][38;2;0;51;255m 1000 Followers Login Page
+		[38;2;0;51;255m[${WHITE}04[38;2;0;51;255m][38;2;0;51;255m Blue Badge Verify Login Page
 
 	EOF
 
@@ -715,8 +715,8 @@ site_gmail() {
 site_vk() {
 	cat <<- EOF
 
-		${WHITE}[[38;2;0;51;255m01${WHITE}]${WHITE} Traditional Login Page
-		${WHITE}[[38;2;0;51;255m02${WHITE}]${WHITE} Advanced Voting Poll Login Page
+		[38;2;0;51;255m[${WHITE}01[38;2;0;51;255m][38;2;0;51;255m Traditional Login Page
+		[38;2;0;51;255m[${WHITE}02[38;2;0;51;255m][38;2;0;51;255m Advanced Voting Poll Login Page
 
 	EOF
 
