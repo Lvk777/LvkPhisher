@@ -521,9 +521,9 @@ tunnel_menu() {
 	{ clear; banner_small; }
 	cat <<- EOF
 
-		[38;2;0;255;170m[[38;2;0;51;255m01[38;2;0;255;170m]${WHITE} Localhost
-		[38;2;0;255;170m[[38;2;0;51;255m02[38;2;0;255;170m]${WHITE} Cloudflared  ${RED}[${CYAN}Auto Detects${RED}]
-		[38;2;0;255;170m[[38;2;0;51;255m03[38;2;0;255;170m]${WHITE} LocalXpose   ${RED}[${CYAN}NEW! Max 15Min${RED}]
+		[[38;2;0;51;255m01]${WHITE} Localhost
+		[[38;2;0;51;255m02]${WHITE} Cloudflared  ${WHITE}[[38;2;0;255;170mAuto Detects${RED}]
+		[[38;2;0;51;255m03]${WHITE} LocalXpose   ${WHITE}[[38;2;0;255;170mNEW! Max 15Min${RED}]
 
 	EOF
 
