@@ -197,7 +197,7 @@ check_update(){
 check_status() {
 	echo -ne "\n${GREEN}[${WHITE}+${GREEN}]${CYAN} Internet Status : "
 	timeout 3s curl -fIs "https://api.github.com" > /dev/null
-	[ $? -eq 0 ] && echo -e "${GREEN}Online${WHITE}" && check_update || echo -e "${RED}Offline${WHITE}"
+	[ $? -eq 0 ] && echo -e "${GREEN}Online${WHITE}" && echo "Online" || echo -e "${RED}Offline${WHITE}"
 }
 
 ## Banner
