@@ -386,7 +386,7 @@ about() {
 cusport() {
 	echo
 
-"${RED}[${WHITE}-${RED}][38;2;0;255;170m Select a port forwarding service : ${WHITE}"
+${RED}[${WHITE}-${RED}][38;2;0;255;170m Select a port forwarding service : ${WHITE}
 	
 	read -n1 -p "${RED}[${WHITE}?${RED}][38;2;0;255;170m Do You Want A Custom Port ${WHITE}[${BLUE}y${WHITE}/${BLUE}N${WHITE}]: ${BLUE}" P_ANS
 	if [[ ${P_ANS} =~ ^([yY])$ ]]; then
