@@ -354,16 +354,18 @@ msg_exit() {
 about() {
 	{ clear; banner; echo; }
 	cat <<- EOF
-		${GREEN} Author   ${RED}:  ${ORANGE}LVK ${RED}[ ${ORANGE}LVK777 ${RED}]
-		${GREEN} Github   ${RED}:  ${CYAN}https://github.com/lvk777
-		${GREEN} Version  ${RED}:  ${ORANGE}${__version__}
+		${BLUE} Author   ${WHITE}:  ${WHITE}LVK ${RED}[ ${WHITE}LVK777 ${RED}]
+		${BLUE} Github   ${WHITE}:  ${CYAN}https://github.com/lvk777
+		${BLUE} Version  ${WHITE}:  ${RED}${__version__}
 
 		${WHITE} ${REDBG}Warning:${RESETBG}
 		${CYAN}  This Tool is made for educational purpose 
 		  only ${RED}!${WHITE}${CYAN} Author will not be responsible for 
 		  any misuse of this toolkit ${RED}!${WHITE}
 
-		${RED}[${WHITE}00${RED}]${ORANGE} Main Menu     ${RED}[${WHITE}99${RED}]${ORANGE} Exit
+${WHITE}[[38;2;0;51;255m01${WHITE}] Localhost
+
+		${WHITE}[[38;2;0;51;255m00${WHITE}]${WHITE} Main Menu     ${WHITE}[${[38;2;0;51;255m}99${WHITE}]${WHITE} Exit
 
 	EOF
 
