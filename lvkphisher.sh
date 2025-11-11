@@ -743,20 +743,20 @@ main_menu() {
 	cat <<- EOF
 		[38;2;0;51;255m[${WHITE}:${WHITE}:[38;2;0;51;255m][0m Select An Attack For Your Victim [38;2;0;51;255m[${WHITE}:${WHITE}:[38;2;0;51;255m][0m
 
-		${WHITE}[${CYAN}01${WHITE}] ${GREEN}Facebook      ${WHITE}[${CYAN}11${WHITE}] ${GREEN}Twitch       ${WHITE}[${CYAN}21${WHITE}] ${GREEN}DeviantArt
-${WHITE}[${CYAN}02${WHITE}] ${GREEN}Instagram     ${WHITE}[${CYAN}12${WHITE}] ${GREEN}Pinterest    ${WHITE}[${CYAN}22${WHITE}] ${GREEN}Badoo
-${WHITE}[${CYAN}03${WHITE}] ${GREEN}Google        ${WHITE}[${CYAN}13${WHITE}] ${GREEN}Snapchat     ${WHITE}[${CYAN}23${WHITE}] ${GREEN}Origin
-${WHITE}[${CYAN}04${WHITE}] ${GREEN}Microsoft     ${WHITE}[${CYAN}14${WHITE}] ${GREEN}Linkedin     ${WHITE}[${CYAN}24${WHITE}] ${GREEN}DropBox	
-${WHITE}[${CYAN}05${WHITE}] ${GREEN}Netflix       ${WHITE}[${CYAN}15${WHITE}] ${GREEN}Ebay         ${WHITE}[${CYAN}25${WHITE}] ${GREEN}Yahoo		
-${WHITE}[${CYAN}06${WHITE}] ${GREEN}Paypal        ${WHITE}[${CYAN}16${WHITE}] ${GREEN}Quora        ${WHITE}[${CYAN}26${WHITE}] ${GREEN}Wordpress
-${WHITE}[${CYAN}07${WHITE}] ${GREEN}Steam         ${WHITE}[${CYAN}17${WHITE}] ${GREEN}Protonmail   ${WHITE}[${CYAN}27${WHITE}] ${GREEN}Yandex			
-${WHITE}[${CYAN}08${WHITE}] ${GREEN}Twitter       ${WHITE}[${CYAN}18${WHITE}] ${GREEN}Spotify      ${WHITE}[${CYAN}28${WHITE}] ${GREEN}StackoverFlow
-${WHITE}[${CYAN}09${WHITE}] ${GREEN}Playstation   ${WHITE}[${CYAN}19${WHITE}] ${GREEN}Reddit       ${WHITE}[${CYAN}29${WHITE}] ${GREEN}Vk
-${WHITE}[${CYAN}10${WHITE}] ${GREEN}Tiktok        ${WHITE}[${CYAN}20${WHITE}] ${GREEN}Adobe        ${WHITE}[${CYAN}30${WHITE}] ${GREEN}XBOX
-${WHITE}[${CYAN}31${WHITE}] ${GREEN}Mediafire     ${WHITE}[${CYAN}32${WHITE}] ${GREEN}Gitlab       ${WHITE}[${CYAN}33${WHITE}] ${GREEN}Github
-${WHITE}[${CYAN}34${WHITE}] ${GREEN}Discord       ${WHITE}[${CYAN}35${WHITE}] ${GREEN}Roblox 
+		${WHITE}[${CYAN}01${WHITE}] ${GREEN}Facebook      ${WHITE}[${CYAN}11${WHITE}] [38;2;0;51;255mTwitch       ${WHITE}[${CYAN}21${WHITE}] [38;2;0;51;255mDeviantArt
+${WHITE}[${CYAN}02${WHITE}] [38;2;0;51;255mInstagram     ${WHITE}[${CYAN}12${WHITE}] [38;2;0;51;255mPinterest    ${WHITE}[${CYAN}22${WHITE}] [38;2;0;51;255mBadoo
+${WHITE}[${CYAN}03${WHITE}] [38;2;0;51;255mGoogle        ${WHITE}[${CYAN}13${WHITE}] [38;2;0;51;255mSnapchat     ${WHITE}[${CYAN}23${WHITE}] [38;2;0;51;255mOrigin
+${WHITE}[${CYAN}04${WHITE}] [38;2;0;51;255mMicrosoft     ${WHITE}[${CYAN}14${WHITE}] [38;2;0;51;255mLinkedin     ${WHITE}[${CYAN}24${WHITE}] [38;2;0;51;255mDropBox	
+${WHITE}[${CYAN}05${WHITE}] [38;2;0;51;255mNetflix       ${WHITE}[${CYAN}15${WHITE}] [38;2;0;51;255mEbay         ${WHITE}[${CYAN}25${WHITE}] [38;2;0;51;255mYahoo		
+${WHITE}[${CYAN}06${WHITE}] [38;2;0;51;255mPaypal        ${WHITE}[${CYAN}16${WHITE}] [38;2;0;51;255mQuora        ${WHITE}[${CYAN}26${WHITE}] [38;2;0;51;255mWordpress
+${WHITE}[${CYAN}07${WHITE}] [38;2;0;51;255mSteam         ${WHITE}[${CYAN}17${WHITE}] [38;2;0;51;255mProtonmail   ${WHITE}[${CYAN}27${WHITE}] [38;2;0;51;255mYandex			
+${WHITE}[${CYAN}08${WHITE}] [38;2;0;51;255mTwitter       ${WHITE}[${CYAN}18${WHITE}] [38;2;0;51;255mSpotify      ${WHITE}[${CYAN}28${WHITE}] [38;2;0;51;255mStackoverFlow
+${WHITE}[${CYAN}09${WHITE}] [38;2;0;51;255mPlaystation   ${WHITE}[${CYAN}19${WHITE}] [38;2;0;51;255mReddit       ${WHITE}[${CYAN}29${WHITE}] [38;2;0;51;255mVk
+${WHITE}[${CYAN}10${WHITE}] [38;2;0;51;255mTiktok        ${WHITE}[${CYAN}20${WHITE}] [38;2;0;51;255mAdobe        ${WHITE}[${CYAN}30${WHITE}] [38;2;0;51;255mXBOX
+${WHITE}[${CYAN}31${WHITE}] [38;2;0;51;255mMediafire     ${WHITE}[${CYAN}32${WHITE}] [38;2;0;51;255mGitlab       ${WHITE}[${CYAN}33${WHITE}] [38;2;0;51;255mGithub
+${WHITE}[${CYAN}34${WHITE}] [38;2;0;51;255mDiscord       ${WHITE}[${CYAN}35${WHITE}] [38;2;0;51;255mRoblox 
 
-${WHITE}[${CYAN}99${WHITE}] ${GREEN}About         ${WHITE}[${CYAN}00${WHITE}] ${GREEN}Exit
+${WHITE}[${CYAN}99${WHITE}] [38;2;0;51;255mAbout         ${WHITE}[${CYAN}00${WHITE}] [38;2;0;51;255mExit
 
 	EOF
 	
