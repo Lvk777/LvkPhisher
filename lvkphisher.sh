@@ -382,7 +382,10 @@ about() {
 ## Choose custom port
 cusport() {
 	echo
-	read -n1 -p "${RED}[${WHITE}?${RED}]${ORANGE} Do You Want A Custom Port ${GREEN}[${CYAN}y${GREEN}/${CYAN}N${GREEN}]: ${ORANGE}" P_ANS
+
+"${RED}[${WHITE}-${RED}][38;2;0;255;170m Select a port forwarding service : ${BLUE}"
+	
+	read -n1 -p "${RED}[${WHITE}?${RED}][38;2;0;255;170m Do You Want A Custom Port ${WHITE}[${BLUE}y${WHITE}/${BLUE}N${WHITE}]: ${BLUE}" P_ANS
 	if [[ ${P_ANS} =~ ^([yY])$ ]]; then
 		echo -e "\n"
 		read -n4 -p "${RED}[${WHITE}-${RED}]${ORANGE} Enter Your Custom 4-digit Port [1024-9999] : ${WHITE}" CU_P
@@ -521,9 +524,9 @@ tunnel_menu() {
 	{ clear; banner_small; }
 	cat <<- EOF
 
-		[[38;2;0;51;255m01]${WHITE} Localhost
-		[[38;2;0;51;255m02]${WHITE} Cloudflared  ${WHITE}[[38;2;0;255;170mAuto Detects${RED}]
-		[[38;2;0;51;255m03]${WHITE} LocalXpose   ${WHITE}[[38;2;0;255;170mNEW! Max 15Min${RED}]
+		${WHITE}[[38;2;0;51;255m01]${WHITE} Localhost
+		${WHITE}[[38;2;0;51;255m02]${WHITE} Cloudflared  ${WHITE}[[38;2;0;255;170mAuto Detects${WHITE}]
+		${WHITE}[[38;2;0;51;255m03]${WHITE} LocalXpose   ${WHITE}[[38;2;0;255;170mNEW! Max 15Min${WHITE}]
 
 	EOF
 
@@ -545,7 +548,7 @@ tunnel_menu() {
 ## Custom Mask URL
 custom_mask() {
 	{ sleep .5; clear; banner_small; echo; }
-	read -n1 -p "${RED}[${WHITE}?${RED}]${ORANGE} Do you want to change Mask URL? ${GREEN}[${CYAN}y${GREEN}/${CYAN}N${GREEN}] :${ORANGE} " mask_op
+	read -n1 -p "${RED}[${WHITE}?${RED}][38;2;0;255;170m Do you want to change Mask URL? ${WHITE}[${BLUE}y${WHITE}/${BLUE}N${WHITE}] :${BLUE} " mask_op
 	echo
 	if [[ ${mask_op,,} == "y" ]]; then
 		echo -e "\n${RED}[${WHITE}-${RED}]${GREEN} Enter your custom URL below ${CYAN}(${ORANGE}Example: https://get-free-followers.com${CYAN})\n"
