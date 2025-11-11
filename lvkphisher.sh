@@ -397,7 +397,7 @@ cusport() {
 			{ sleep 2; clear; banner_small; cusport; }
 		fi		
 	else 
-		echo -ne "\n\n${RED}[${WHITE}-${RED}]${BLUE} Using Default Port $PORT...${WHITE}\n"
+		echo -ne "\n\n${RED}[${WHITE}-${RED}]${BLUE} Using Default Port ${WHITE}$PORT...${WHITE}\n"
 	fi
 }
 
